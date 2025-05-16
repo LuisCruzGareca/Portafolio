@@ -62,9 +62,13 @@
   }
   .tools1 {
     height: 350px;
+    width: 285px;
   }
   .projectsImg {
     width: 320px;
+  }
+  .tools {
+    height: 100vh;
   }
 }
 
@@ -226,7 +230,7 @@
   }
 
   .projectsImg {
-    width: 800px;
+    width: 300px;
   }
   .footer {
     flex-direction: column;
@@ -235,6 +239,7 @@
   }
   h1 {
     font-size: 34px;
+    margin-bottom: 1px;
   }
   h3 {
     font-size: 22px;
@@ -242,12 +247,15 @@
   .Botones a {
     padding: 10px;
   }
+  .mobile_menu a p {
+    font-size: 40px;
+  }
 }
 
 /* ===== Celulares Extra Pequeños ===== */
 @media screen and (max-width: 390px) {
   .projectsImg {
-    width: 500px;
+    width: 285px;
   }
   .imageLuis .parte2 p {
     font-size: 24px;
@@ -266,7 +274,7 @@
     height: 0;
   } */
   .tools_container {
-    height: 765px;
+    height: 390px;
   }
   .layout_projects h3 {
     font-size: 18px;
@@ -293,11 +301,29 @@
   }
   h1 {
     font-size: 30px;
+    margin-top: 64px;
   }
   .imgLogo {
     width: 40px;
   }
   .Botones a {
     padding: 10px;
+  }
+  .mobile_menu a p {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .projectsImg {
+    width: 220px;
+  }
+  .dentro {
+    margin-top: 30px;
+  }
+  h1 {
+    margin-bottom: 1px;
+  }
+  .mobile_menu a p {
+    font-size: 30px;
   }
 }

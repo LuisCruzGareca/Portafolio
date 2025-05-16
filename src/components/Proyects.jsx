@@ -1,5 +1,8 @@
 import pagina2 from "../assets/pagina2.png";
 import pagina1 from "../assets/pages.png";
+import paginaMOvile from "../assets/pagina2.jpeg";
+import paginaMovile from "../assets/pagina1-mobile.jpg";
+
 import { useState } from "react";
 import { Back, Next } from "./incons";
 import { useSwipeable } from "react-swipeable";
@@ -12,14 +15,14 @@ export function Proyects() {
     {
       titulo: "TIENDA",
       imagenDesktop: pagina2,
-      imagenMobile: pagina2,
+      imagenMobile: paginaMOvile,
       link: "https://www.bata.com.bo/",
     },
     {
       titulo: "VENTA",
       imagenDesktop: pagina1,
 
-      imagenMobile: pagina1,
+      imagenMobile: paginaMovile,
       link: "https://www.bata.com.bo/",
     },
   ];
@@ -61,14 +64,14 @@ export function Proyects() {
             rel="noopener noreferrer"
           >
             <picture>
-              {/* <source
+              <source
                 media="(max-width: 500px)"
                 srcSet={visibleProyect.imagenMobile}
               />
               <source
                 media="(min-width: 769px)"
                 srcSet={visibleProyect.imagenDesktop}
-              /> */}
+              />
               <img
                 src={visibleProyect.imagenDesktop}
                 alt={`Proyecto: ${visibleProyect.titulo}`}

@@ -181,3 +181,12 @@ p {
   height: 50px;
   flex-shrink: 0;
 }
+p,
+span,
+h1,
+h2,
+h3,
+div {
+  caret-color: transparent; /* Quita el cursor de texto */
+  user-select: none; /* Evita que se seleccione el texto */
+}
